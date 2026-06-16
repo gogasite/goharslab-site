@@ -952,6 +952,38 @@ h3 {
   transform: translate(-50%, -50%) rotate(3deg);
 }
 
+.preview-photo {
+  position: absolute;
+  left: 50%;
+  top: 44%;
+  width: 48%;
+  height: 58%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+  filter: saturate(0.88) contrast(0.96) brightness(1.08);
+  mix-blend-mode: multiply;
+  opacity: 0.92;
+  transform: translate(-50%, -50%);
+}
+
+.product-preview.has-photo {
+  background:
+    radial-gradient(circle at 50% 26%, rgba(255, 250, 244, 0.68), transparent 10rem),
+    radial-gradient(circle at 50% 68%, rgba(255, 255, 255, 0.28), transparent 8rem),
+    linear-gradient(145deg, rgba(255, 250, 244, 0.58), rgba(63, 48, 40, 0.1)),
+    var(--product-tone);
+}
+
+.product-preview.has-photo .preview-orbit {
+  opacity: 0.58;
+}
+
+.product-preview.has-photo .preview-platform {
+  bottom: 19%;
+  opacity: 0.82;
+}
+
 .preview-mark {
   left: 1rem;
   top: 1rem;
