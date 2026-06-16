@@ -701,6 +701,12 @@ h3 {
   backdrop-filter: blur(16px);
 }
 
+.collection-copy h1 {
+  max-width: 100%;
+  font-size: clamp(4.2rem, 6.1vw, 5.65rem);
+  line-height: 0.92;
+}
+
 .collection-stage,
 .product-gallery {
   position: relative;
@@ -1439,6 +1445,10 @@ button:disabled {
   .product-gallery,
   .info-card {
     min-height: auto;
+  }
+
+  .collection-copy h1 {
+    font-size: clamp(3rem, 13vw, 4rem);
   }
 
   .collection-stage,
