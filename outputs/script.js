@@ -49,7 +49,7 @@ const products = [
   product("stone-mist", "Stone Mist", "stoneberry", "Hydrating setting mist", "$38", "A mineral water veil that sets makeup with a soft satin finish.", "#b58b70"),
   product("face-oil", "Face Oil", "stoneberry", "Nourishing elixir", "$58", "A sculptural metallic face oil that nourishes skin with a soft Stoneberry glow.", "#c5a085"),
   product("sculpt-stick", "Sculpt Stick", "stoneberry", "Cream contour stick", "$34", "A rose-gold cream contour that melts into skin without harsh edges.", "#8d705f"),
-  product("soft-flush", "Soft Flush", "stoneberry", "Cream blush stick", "$34", "A creamy warm flush stick for soft carved color on cheeks.", "#b98272"),
+  product("soft-flush", "Stone Bloom", "stoneberry", "Cream blush stick", "$34", "A creamy warm blush stick for soft carved color on cheeks.", "#b98272"),
   product("lip-sculpt", "Lip Sculpt", "stoneberry", "Sculpting lipstick", "$36", "A warm berry-rose lipstick with satin comfort and a softly carved Stoneberry finish.", "#9f5f5a"),
   product("stone-blush", "Stone Blush", "stoneberry", "Pressed mineral blush", "$42", "Warm pressed color with a carved-stone compact and soft-focus payoff.", "#ad7a70"),
   product("lash-stone", "Lash Stone", "stoneberry", "Lengthening mascara", "$32", "A defining mascara for lifted lashes with a clean sculpted finish.", "#6c5a4d"),
