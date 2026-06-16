@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#efe7df" />
+    <title>GoharsLab</title>
+    <link rel="stylesheet" href="styles.css?v=20260616-goharslab" />
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true"><span></span></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#/">
+        <span>GoharsLab</span>
+        <small>cosmetics</small>
+      </a>
+
+      <button class="menu-button" data-menu-toggle aria-label="Open menu" data-i18n="nav.menu">menu</button>
+
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#/shop" data-i18n="nav.shop">Shop</a>
+        <a href="#/collections" data-i18n="nav.collections">Collections</a>
+        <a href="#/ingredients" data-i18n="nav.ingredients">Ingredients</a>
+        <a href="#/journal" data-i18n="nav.journal">Journal</a>
+        <a href="#/about" data-i18n="nav.about">About</a>
+        <a href="#/stores" data-i18n="nav.stores">Stores</a>
+      </nav>
+
+      <div class="language-switcher" aria-label="Language selector">
+        <button data-lang="en" aria-label="English">EN</button>
+        <button data-lang="ru" aria-label="Russian">RU</button>
+        <button data-lang="hy" aria-label="Armenian">HY</button>
+      </div>
+
+      <div class="header-actions" aria-label="Shop actions">
+        <button data-open-search aria-label="Search"><span class="action-icon icon-search"></span><span class="action-text" data-i18n="actions.search">Search</span></button>
+        <button data-open-wishlist aria-label="Wishlist"><span class="action-icon icon-heart"></span><span class="action-text" data-i18n="actions.wishlist">Wishlist</span><span data-wishlist-count>0</span></button>
+        <button data-open-cart aria-label="Cart"><span class="action-icon icon-bag"></span><span class="action-text" data-i18n="actions.cart">Cart</span><span data-cart-count>0</span></button>
+        <button data-open-account aria-label="Account"><span class="action-icon icon-user"></span><span class="action-text" data-i18n="actions.account">Account</span></button>
+      </div>
+    </header>
+
+    <aside class="mobile-drawer" data-mobile-drawer aria-hidden="true">
+      <a href="#/shop" data-i18n="nav.shop">Shop</a>
+      <a href="#/collections" data-i18n="nav.collections">Collections</a>
+      <a href="#/ingredients" data-i18n="nav.ingredients">Ingredients</a>
+      <a href="#/journal" data-i18n="nav.journal">Journal</a>
+      <a href="#/about" data-i18n="nav.about">About</a>
+      <a href="#/stores" data-i18n="nav.stores">Stores</a>
+    </aside>
+
+    <main id="app" class="page-shell" tabindex="-1"></main>
+
+    <footer class="site-footer">
+      <nav aria-label="Footer navigation">
+        <a href="#/about" data-i18n="footer.about">About us</a>
+        <a href="#/ingredients" data-i18n="nav.ingredients">Ingredients</a>
+        <a href="#/impact" data-i18n="footer.impact">Our impact</a>
+        <a href="#/journal" data-i18n="nav.journal">Journal</a>
+      </nav>
+      <a class="brand" href="#/">
+        <span>GoharsLab</span>
+        <small>cosmetics</small>
+      </a>
+      <div class="socials" aria-label="Social links">
+        <a href="#/journal">Instagram</a>
+        <a href="#/journal">TikTok</a>
+        <a href="#/journal">Pinterest</a>
+      </div>
+    </footer>
+
+    <div class="panel-backdrop" data-panel-backdrop></div>
+
+    <section class="side-panel" data-panel="search" aria-label="Search panel" aria-hidden="true">
+      <div class="panel-head">
+        <h2 data-i18n="actions.search">Search</h2>
+        <button data-close-panel data-i18n="actions.close">Close</button>
+      </div>
+      <label class="search-box">
+        <span data-i18n="search.label">Find products and collections</span>
+        <input data-search-input type="search" placeholder="Try Stone Mist or EcoSoul" data-i18n-placeholder="search.placeholder" />
+      </label>
+      <div class="panel-list" data-search-results></div>
+    </section>
+
+    <section class="side-panel" data-panel="wishlist" aria-label="Wishlist panel" aria-hidden="true">
+      <div class="panel-head">
+        <h2 data-i18n="actions.wishlist">Wishlist</h2>
+        <button data-close-panel data-i18n="actions.close">Close</button>
+      </div>
+      <div class="panel-list" data-wishlist-list></div>
+    </section>
+
+    <section class="side-panel" data-panel="cart" aria-label="Cart panel" aria-hidden="true">
+      <div class="panel-head">
+        <h2 data-i18n="cart.title">Your cart</h2>
+        <button data-close-panel data-i18n="actions.close">Close</button>
+      </div>
+      <div class="panel-list" data-cart-list></div>
+      <button class="checkout-button" data-checkout data-i18n="actions.checkout">Checkout</button>
+    </section>
+
+    <section class="side-panel" data-panel="account" aria-label="Account panel" aria-hidden="true">
+      <div class="panel-head">
+        <h2 data-i18n="actions.account">Account</h2>
+        <button data-close-panel data-i18n="actions.close">Close</button>
+      </div>
+      <div class="account-card">
+        <p class="eyebrow" data-i18n="account.eyebrow">Members studio</p>
+        <h3 data-i18n="account.title">Soft rituals, saved.</h3>
+        <p data-i18n="account.body">Create a profile to save wishlists, track orders, and preview collection drops.</p>
+        <button class="pill-button" data-i18n="account.create">Create account</button>
+      </div>
+    </section>
+
+    <div class="toast" data-toast></div>
+
+    <script src="script.js?v=20260616-goharslab"></script>
+  </body>
+</html>
