@@ -46,14 +46,14 @@ const collections = {
 };
 
 const products = [
-  product("stone-mist", "Stone Mist", "stoneberry", "Hydrating setting mist", "$38", "A mineral water veil that sets makeup with a soft satin finish.", "#c8aa8f"),
+  product("stone-mist", "Stone Mist", "stoneberry", "Hydrating setting mist", "$38", "A mineral water veil that sets makeup with a soft satin finish.", "#d4c3ae"),
   product("face-oil", "Face Oil", "stoneberry", "Nourishing elixir", "$58", "A sculptural metallic face oil that nourishes skin with a soft Stoneberry glow.", "#d0b99e"),
-  product("sculpt-stick", "Sculpt Stick", "stoneberry", "Cream contour stick", "$34", "A champagne-gold cream contour that melts into skin without harsh edges.", "#c8aa8f"),
+  product("sculpt-stick", "Sculpt Stick", "stoneberry", "Cream contour stick", "$34", "A champagne-gold cream contour that melts into skin without harsh edges.", "#d4c3ae"),
   product("tinted-veil", "Tinted Veil", "stoneberry", "Sheer lip and cheek tint", "$32", "A translucent berry tint that brings a sculpted veil of color to lips and cheeks.", "#7f4b53"),
-  product("lip-sculpt", "Lip Sculpt", "stoneberry", "Sculpting lipstick", "$36", "A warm berry-rose lipstick with satin comfort and a softly carved Stoneberry finish.", "#c8aa8f"),
-  product("stone-blush", "Stone Blush", "stoneberry", "Pressed mineral blush", "$42", "Warm pressed color with a carved-stone compact and soft-focus payoff.", "#c8aa8f"),
-  product("stone-shadow", "Stone Shadow", "stoneberry", "Eyeshadow quad", "$46", "A warm mineral shadow quad with soft rose, bronze, and stone-brown tones.", "#c1a083"),
-  product("lash-stone", "Lash Stone", "stoneberry", "Lengthening mascara", "$32", "A defining mascara for lifted lashes with a clean sculpted finish.", "#c1a083"),
+  product("lip-sculpt", "Lip Sculpt", "stoneberry", "Sculpting lipstick", "$36", "A warm berry-rose lipstick with satin comfort and a softly carved Stoneberry finish.", "#d4c3ae"),
+  product("stone-blush", "Stone Blush", "stoneberry", "Pressed mineral blush", "$42", "Warm pressed color with a carved-stone compact and soft-focus payoff.", "#d4c3ae"),
+  product("stone-shadow", "Stone Shadow", "stoneberry", "Eyeshadow quad", "$46", "A warm mineral shadow quad with soft rose, bronze, and stone-brown tones.", "#ccb79f"),
+  product("lash-stone", "Lash Stone", "stoneberry", "Lengthening mascara", "$32", "A defining mascara for lifted lashes with a clean sculpted finish.", "#ccb79f"),
   product("aura-gloss", "Aura Gloss", "pastel", "High-shine lip gloss", "$28", "A pearly lavender-blush shine with a cushioned, non-sticky feel.", "#d8cceb"),
   product("light-veil", "Light Veil", "pastel", "Soft radiance serum", "$46", "A semi-gloss skin tint that catches light like frosted glass.", "#efd4dc"),
   product("pearl-balm", "Pearl Balm", "pastel", "Radiant highlight balm", "$36", "Creamy pearl highlight for luminous, not metallic, reflection.", "#efe4f5"),
@@ -755,7 +755,7 @@ function productVisual(item) {
   const image = PRODUCT_IMAGES[item.slug];
   if (image) {
     return `
-      <div class="visual-set product-preview product-photo-preview ${visualClass(item.collection)}" style="--product-tone:${item.tone}">
+      <div class="visual-set product-preview product-photo-preview product-${item.slug} ${visualClass(item.collection)}" style="--product-tone:${item.tone}">
         <img class="preview-photo-full" src="${image}" alt="${item.name} product preview">
       </div>
     `;
