@@ -968,6 +968,18 @@ h3 {
   filter: saturate(0.94) contrast(0.98) brightness(1.02);
 }
 
+.product-photo-preview:not(.product-face-oil):not(.product-tinted-veil) .preview-photo-full {
+  filter: sepia(0.08) saturate(0.72) hue-rotate(-8deg) contrast(0.94) brightness(1.1);
+}
+
+.product-face-oil .preview-photo-full {
+  filter: saturate(0.88) contrast(0.96) brightness(1.04);
+}
+
+.product-tinted-veil .preview-photo-full {
+  filter: saturate(0.96) contrast(0.98) brightness(1.02);
+}
+
 .preview-mark {
   left: 1rem;
   top: 1rem;
