@@ -563,11 +563,16 @@ h3 {
 }
 
 .collection-grid,
-.product-grid,
 .values-grid,
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -589,7 +594,7 @@ h3 {
 .campaign-card,
 .product-card {
   position: relative;
-  min-height: 26rem;
+  min-height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1464,7 +1469,7 @@ button:disabled {
 
   .campaign-card,
   .product-card {
-    min-height: 20rem;
+    min-height: 27rem;
   }
 
   .collection-copy,
