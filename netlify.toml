@@ -1,0 +1,13 @@
+[build]
+  publish = "outputs"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/success"
+  to = "/#/payment-success"
+  status = 200
+
+[[redirects]]
+  from = "/cancel"
+  to = "/#/payment-cancelled"
+  status = 200
