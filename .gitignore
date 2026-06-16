@@ -1,0 +1,6 @@
+.DS_Store
+.netlify/
+work/
+node_modules/
+npm-debug.log*
+
