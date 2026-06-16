@@ -1,4 +1,4 @@
-# GoharsLab
+# Gohar's Lab
 
 Static luxury cosmetics website deployed on Netlify.
 
