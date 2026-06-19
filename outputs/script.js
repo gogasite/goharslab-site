@@ -770,7 +770,7 @@ function productVisual(item) {
     `;
   }
   return `
-    <div class="visual-set product-preview ${visualClass(item.collection)}" style="--product-tone:${item.tone}">
+    <div class="visual-set product-preview product-${item.slug} ${visualClass(item.collection)}" style="--product-tone:${item.tone}">
       <span class="preview-orbit"></span>
       <span class="preview-platform"></span>
       <span class="preview-object"></span>
