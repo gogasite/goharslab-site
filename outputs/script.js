@@ -775,7 +775,7 @@ function productVisual(item) {
       <span class="preview-platform"></span>
       <span class="preview-object"></span>
       <span class="preview-mark" aria-hidden="true">✦</span>
-      <span class="preview-brand">Gohar's Lab</span>
+      <span class="preview-brand">GL</span>
       <span class="preview-type">${typeLabel}</span>
       <span class="preview-note">${collection.status === "available" ? "product preview" : "coming soon"}</span>
     </div>
