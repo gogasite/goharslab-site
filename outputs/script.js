@@ -756,10 +756,12 @@ function visualMarkup(slug) {
   return `<div class="visual-set ${visualClass(slug)}"><span class="${detail}"></span></div>`;
 }
 
+const sculptedPreviewSlugs = new Set(["wave-cream", "glitter-spray", "stone-blush", "lash-stone", "brow-gel"]);
+
 function productVisual(item) {
   const collection = collections[item.collection];
   const typeLabel = item.type.split(" ").slice(0, 2).join(" ");
-  const image = PRODUCT_IMAGES[item.slug];
+  const image = sculptedPreviewSlugs.has(item.slug) ? null : PRODUCT_IMAGES[item.slug];
   if (image) {
     return `
       <div class="visual-set product-preview product-photo-preview product-${item.slug} ${visualClass(item.collection)}" style="--product-tone:${item.tone}">
