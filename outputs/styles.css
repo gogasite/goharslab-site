@@ -959,18 +959,19 @@ h3 {
 }
 
 .product-wave-cream .preview-object {
-  width: 30%;
-  height: 46%;
-  border-radius: 18px 18px 24px 24px;
-  clip-path: polygon(7% 4%, 92% 0, 96% 12%, 87% 24%, 96% 38%, 86% 51%, 95% 66%, 85% 82%, 92% 96%, 9% 100%, 3% 86%, 12% 70%, 3% 55%, 13% 40%, 4% 24%, 13% 10%);
+  top: 41%;
+  width: 24%;
+  height: 38%;
+  border-radius: 18px 18px 22px 22px;
+  clip-path: polygon(14% 3%, 86% 2%, 90% 14%, 80% 27%, 90% 41%, 80% 55%, 90% 70%, 78% 94%, 18% 98%, 9% 76%, 19% 60%, 9% 45%, 20% 30%, 10% 15%);
 }
 
 .product-glitter-spray .preview-object {
-  top: 42%;
-  width: 27%;
-  height: 49%;
-  border-radius: 20px 20px 26px 26px;
-  clip-path: polygon(18% 2%, 82% 0, 88% 13%, 78% 27%, 89% 42%, 77% 57%, 88% 74%, 76% 95%, 20% 100%, 10% 80%, 21% 62%, 10% 45%, 22% 29%, 12% 14%);
+  top: 41%;
+  width: 21%;
+  height: 42%;
+  border-radius: 20px 20px 24px 24px;
+  clip-path: polygon(18% 2%, 82% 2%, 88% 16%, 79% 31%, 88% 46%, 78% 62%, 86% 78%, 74% 97%, 22% 98%, 12% 80%, 21% 64%, 12% 48%, 22% 32%, 13% 16%);
 }
 
 .product-glitter-spray .preview-object::before,
@@ -978,9 +979,9 @@ h3 {
   content: "";
   position: absolute;
   left: 50%;
-  top: -23%;
-  width: 42%;
-  height: 27%;
+  top: -20%;
+  width: 46%;
+  height: 22%;
   border-radius: 999px 999px 8px 8px;
   background:
     linear-gradient(100deg, rgba(255, 255, 255, 0.68), transparent 42%, rgba(64, 45, 34, 0.16)),
@@ -990,36 +991,38 @@ h3 {
 }
 
 .product-stone-blush .preview-object {
-  top: 46%;
-  width: 45%;
-  height: 34%;
+  top: 42%;
+  width: 34%;
+  height: 24%;
   border-radius: 999px;
-  transform: translate(-50%, -50%) rotate(-7deg);
+  transform: translate(-50%, -50%) rotate(-8deg);
 }
 
 .product-stone-blush .preview-object::before {
   content: "";
   position: absolute;
-  inset: 16%;
+  inset: 22%;
   border-radius: inherit;
   background:
-    radial-gradient(circle at 52% 45%, rgba(151, 89, 79, 0.58), rgba(194, 142, 122, 0.74) 42%, rgba(255, 250, 244, 0.18) 43%),
+    radial-gradient(circle at 50% 50%, rgba(177, 106, 92, 0.7), rgba(204, 145, 124, 0.7) 58%, rgba(255, 250, 244, 0.18) 61%),
     linear-gradient(145deg, rgba(255, 255, 255, 0.26), rgba(109, 78, 63, 0.12));
-  box-shadow: inset 0 0 0 1px rgba(255, 250, 244, 0.32);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 250, 244, 0.32),
+    0 0 0 0.6rem rgba(255, 250, 244, 0.12);
 }
 
 .product-lash-stone .preview-object {
-  top: 43%;
-  width: 24%;
-  height: 53%;
-  border-radius: 999px;
-  clip-path: polygon(28% 0, 72% 0, 80% 10%, 69% 20%, 83% 32%, 70% 43%, 83% 57%, 69% 69%, 80% 83%, 70% 100%, 30% 100%, 20% 84%, 31% 70%, 18% 57%, 31% 44%, 18% 30%, 31% 18%, 20% 8%);
+  top: 42%;
+  width: 18%;
+  height: 44%;
+  border-radius: 18px 18px 24px 24px;
+  clip-path: polygon(28% 0, 72% 0, 79% 13%, 70% 25%, 80% 39%, 70% 52%, 80% 67%, 69% 85%, 72% 100%, 28% 100%, 31% 85%, 20% 67%, 30% 52%, 20% 38%, 30% 24%, 21% 12%);
 }
 
 .product-brow-gel .preview-object {
-  top: 43%;
-  width: 31%;
-  height: 54%;
+  top: 42%;
+  width: 23%;
+  height: 42%;
   border-radius: 999px;
   transform: translate(-50%, -50%) rotate(0deg);
 }
@@ -1027,7 +1030,7 @@ h3 {
 .product-brow-gel .preview-object::before {
   content: "";
   position: absolute;
-  inset: 18% 27%;
+  inset: 20% 30%;
   border-radius: 999px;
   background: rgba(255, 250, 244, 0.64);
   box-shadow:
@@ -1040,7 +1043,7 @@ h3 {
 .product-lash-stone .preview-brand,
 .product-brow-gel .preview-brand {
   left: 50%;
-  top: 47%;
+  top: 44%;
   transform: translate(-50%, -50%);
 }
 
