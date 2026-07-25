@@ -1056,20 +1056,20 @@ h3 {
 
 .preview-photo-full {
   position: absolute;
-  left: 1rem;
-  right: 1rem;
-  top: 1rem;
-  width: calc(100% - 2rem);
-  height: min(66%, 22rem);
+  left: 50%;
+  top: 1.15rem;
+  width: min(86%, 23rem);
+  height: min(64%, 22rem);
   object-fit: contain;
   object-position: center center;
   display: block;
-  border-radius: 7px;
+  border-radius: 6px;
+  transform: translateX(-50%);
   filter: saturate(0.98) contrast(1.02) brightness(1.03);
 }
 
 .product-photo-preview:not(.product-face-oil):not(.product-tinted-veil) .preview-photo-full {
-  filter: sepia(0.03) saturate(0.92) hue-rotate(-4deg) contrast(1.02) brightness(1.04);
+  filter: sepia(0.03) saturate(0.94) hue-rotate(-4deg) contrast(1.03) brightness(1.04);
 }
 
 .product-face-oil .preview-photo-full {
