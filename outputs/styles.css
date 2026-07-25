@@ -1056,14 +1056,15 @@ h3 {
 
 .preview-photo-full {
   position: absolute;
-  left: 50%;
-  top: 5%;
-  width: 92%;
-  height: 70%;
-  transform: translateX(-50%);
+  left: 1rem;
+  right: 1rem;
+  top: 1rem;
+  width: calc(100% - 2rem);
+  height: min(66%, 22rem);
   object-fit: contain;
   object-position: center center;
   display: block;
+  border-radius: 7px;
   filter: saturate(0.98) contrast(1.02) brightness(1.03);
 }
 
